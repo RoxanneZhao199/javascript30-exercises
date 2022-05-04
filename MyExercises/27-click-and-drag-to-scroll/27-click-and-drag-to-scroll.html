@@ -63,7 +63,7 @@
       if(!isDown) return; // stop the fn from running
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 3;
+      const walk = (x - startX) * 3; // * 3 means for every pixel moved, you're going to scroll the slider 3 pixels
       slider.scrollLeft = scrollLeft - walk;
     });
 
